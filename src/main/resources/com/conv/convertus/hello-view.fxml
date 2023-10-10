@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="337.0" spacing="25.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.conv.convertus.HelloController">
+   <children>
+      <Label text="Конвертер">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <SplitPane dividerPositions="0.5" prefHeight="50.0" prefWidth="317.0">
+         <items>
+            <Label fx:id="fileChooseLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="225.0" text="Выбор файлов:" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#fileChoose" prefHeight="28.0" prefWidth="81.0" text="Выбрать">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </items>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets left="10.0" right="10.0" />
+         </opaqueInsets>
+      </SplitPane>
+      <SplitPane dividerPositions="0.5709090909090909" prefHeight="49.0" prefWidth="317.0">
+        <items>
+            <Button mnemonicParsing="false" onAction="#startConverter" prefHeight="39.0" prefWidth="277.0" text="Конвертировать" />
+            <ChoiceBox fx:id="choiceBox" prefHeight="39.0" prefWidth="115.0" />
+        </items>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </SplitPane>
+      <ProgressBar fx:id="barProgress" prefHeight="29.0" prefWidth="295.0" progress="0.0">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </ProgressBar>
+      <TextArea fx:id="textConsole" prefHeight="216.0" prefWidth="277.0">
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" />
+         </VBox.margin>
+      </TextArea>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="10.0" right="10.0" top="50.0" />
+   </padding>
+</VBox>
